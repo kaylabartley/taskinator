@@ -1,6 +1,5 @@
-var buttonEl = document.querySelector("button");
 var tasksToDoEl = document.querySelector("#tasks-to-do");
-var formEl = document.querySelector("form");
+var formEl = document.querySelector("#task-form");
 
 var taskFormHandler = function(event) {
 
@@ -44,4 +43,4 @@ tasksToDoEl.appendChild(listItemEl);
 }
 
 
-buttonEl.addEventListener("click", taskFormHandler);
+formEl.addEventListener("submit", taskFormHandler);
